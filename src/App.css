@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.app-header{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(31, 31, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 3px 33px -3px rgba(122,104,104,0.75);
+
+}
+.todo-list{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.todo-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 0px 3px 33px -3px rgba(122,104,104,0.75);
+  margin-top: 10px;
+}
+.done{
+  background-color: rgb(185, 238, 185);
+}
+.undone{
+  background-color: rgb(241, 176, 176);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-task{
+  width: 100%;
+  padding: 1.1rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 0px 3px 33px -3px rgba(122,104,104,0.75);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+
+}
+.add-task > *{
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px; 
+}
+.add-task button{
+  background-color: blue;
+  padding: 1.1 em;
   color: white;
-}
+  border: none;
 
-.App-link {
-  color: #61dafb;
 }
+.inps{
+  width: 100%;
+  margin-top: 10px;
+  padding: 1.1em ;
+  border: none; 
+}
+.inps >*{
+  width: 100%;
+  margin-top: 10px;
+  padding: 1.1em;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
